@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    position: relative;
+    font-family: 'Bitter', sans-serif;
+}
+body{
+    background-color: #f7f7f7;
+    color: #2A2B2A;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+.row .player-card{
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+.row .player-card h2{
+    margin: 0 0 10px 0;
+}
+.row .player-card .health-bar{
+    height: 30px;
+    background-color: #f7f7f7;
+}
+.row .player-card .health-bar .green-bar{
+    height: 30px;
+    background-color: #2bb22b;
+    width: 100%;
+    transition-duration: 0.2s;
+}
+.row .player-card .health-bar .health{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+.row .player-card .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.row .player-card .details > div{
+    flex: 1;
+}
+.row .player-card .details .img-container{
+    display: flex;
+}
+.row .player-card .details .img-container img{
+    width: 100%;
+}
+.row .player-card .details .stats-container{
+    background-color: #2A2B2A;
+    color: #f7f7f7;
+    padding: 6px 0;
+}
+.row .player-card .details .stats-container p{
+    padding: 4px;
+}
+.btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.btns button{
+    padding: 8px 0;
+    background-color: var(--btn-color);
+    border: none;
+    color: #f7f7f7;
+    flex: 1;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+.btns button:hover{
+    opacity: 0.7;
+}
+.turn{
+    margin: 10px 10px 0 10px;
+    text-align: center;
+}
